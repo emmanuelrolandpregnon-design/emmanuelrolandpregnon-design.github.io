@@ -1,30 +1,45 @@
-:root { --bg: #e6e6e6; --panel: #f3f3f3; --ink: #1c1c1c; --muted: #6d6d6d; --line: #e1e1e1; }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, sans-serif; }
-a { color: inherit; text-decoration: none; }
-.app { min-height: 100vh; display: grid; grid-template-columns: 64px 240px 1fr; gap: 12px; padding: 16px; }
-.rail, .side, main { background: var(--panel); border-radius: 22px; }
-.rail { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 14px 0; }
-.mark, .rail a { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 12px; background: #111; color: #fff; font-size: 13px; }
-.rail a { background: transparent; color: #111; }
-.side, main { padding: 18px; }
-.who { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; }
-.who img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; object-position: center 18%; background: #ddd; }
-.who strong { display: block; font-size: 14px; }
-.who span, .label, .sub { color: var(--muted); font-size: 12px; }
-.label { margin: 16px 0 6px; letter-spacing: .04em; text-transform: uppercase; }
-.row { display: block; padding: 9px 10px; border-radius: 12px; font-size: 14px; }
-.row.on { background: #fff; box-shadow: 0 1px 0 var(--line); }
-.quiet { color: var(--muted); }
-h1, h2 { margin: 0; font-weight: 560; }
-h1 { font-size: 32px; }
-.sub { margin: 4px 0 16px; }
-.card { background: #fff; border-radius: 16px; padding: 16px; margin-bottom: 12px; }
-.card h2 { font-size: 20px; margin-bottom: 6px; }
-.card p { margin: 0 0 8px; color: #333; }
-.grid { display: grid; gap: 12px; }
-@media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 800px) {
-  .app { grid-template-columns: 1fr; }
-  .rail { flex-direction: row; justify-content: space-between; }
+html, body { height: 100%; margin: 0; }
+body { background: #0e0d0c; color: #24211c; font-family: "Archivo Narrow", sans-serif; }
+.desk { min-height: 100%; display: flex; padding: 18px 10px 28px; overflow-x: auto; }
+.strip {
+  position: relative; flex: 0 0 128px; min-height: calc(100vh - 46px);
+  padding: 58px 14px 18px;
+  background-image: radial-gradient(rgba(0,0,0,.04) .6px, transparent .6px);
+  background-size: 3px 3px;
+  box-shadow: 8px 0 18px rgba(0,0,0,.18);
 }
+.cream { background: #cfc6b6; }
+.paper { background: #f3eee4; }
+.mist { background: #cfd5dc; }
+.gold { background: #8a6a3b; color: #f4ead7; }
+.ink { background: #161513; color: #f3eee4; }
+.photo { background: #2c382c; color: #f3eee4; overflow: hidden; }
+.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; z-index: 0; }
+.edge { background: #ddd4c6; }
+.tab {
+  position: absolute; top: 16px; left: 10px; z-index: 2;
+  padding: 8px 8px 16px; border: 1px solid rgba(0,0,0,.08); border-bottom: 0;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  writing-mode: vertical-rl; transform: rotate(180deg); background: inherit;
+}
+.tab.pale { color: #f3eee4; border-color: rgba(255,255,255,.12); }
+.photo .tab { background: rgba(243,238,228,.9); color: #24211c; }
+.vert { margin: 0; writing-mode: vertical-rl; transform: rotate(180deg); font-weight: 700; font-size: 34px; letter-spacing: -.04em; line-height: .9; }
+.vert.title { font-size: 40px; height: 78%; }
+.vert.small { font-size: 18px; font-weight: 500; }
+.code { margin: 64px 0 0; font-size: 13px; letter-spacing: .16em; }
+.note { margin: 16px 0 0; font-size: 20px; line-height: 1.1; }
+.block { margin: 28px 0 0; font-size: 15px; line-height: 1.35; }
+.file, .tiny, .meta, .stamp, .foot {
+  position: absolute; left: 14px; right: 12px; margin: 0;
+  font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+}
+.file, .stamp, .tiny, .foot { bottom: 16px; }
+.tiny, .foot { text-transform: none; letter-spacing: .02em; line-height: 1.3; }
+.serif { margin: 72px 0 0; font-family: "Libre Baskerville", Georgia, serif; font-size: 22px; font-style: italic; }
+.mark { margin: 28px 0 10px; font-family: "Libre Baskerville", Georgia, serif; font-size: 64px; line-height: .8; }
+.meta.gold, .meta.light { color: #e4b423; }
+.line { position: absolute; top: 70px; bottom: 70px; right: 16px; width: 1px; background: #e4b423; z-index: 1; }
+a { color: inherit; position: absolute; bottom: 18px; left: 14px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+@media (max-width: 700px) { .strip { flex-basis: 104px; min-height: 88vh; } .vert.title { font-size: 30px; } }
