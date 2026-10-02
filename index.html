@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmanuel-Roland Pregnon — Communication & marketing digital</title>
+  <meta name="description" content="Portfolio d'Emmanuel-Roland Pregnon, fondateur d'EbookHub. Communication et marketing digital, Yamoussoukro. Édition 2026.">
+  <meta name="author" content="Emmanuel-Roland Pregnon">
+  <meta property="og:title" content="Emmanuel-Roland Pregnon — Communication & Marketing Digital">
+  <meta property="og:description" content="Fondateur d'EbookHub. Édition 2026. Yamoussoukro.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CI">
+  <meta property="og:image" content="og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0C1424">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,460;9..144,560;9..144,640&family=Outfit:wght@340;420;520&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Emmanuel-Roland Pregnon",
+    "alternateName": "Pregnon Dimi Emmanuel-Roland",
+    "jobTitle": "Fondateur d'EbookHub",
+    "address": { "@type": "PostalAddress", "addressLocality": "Yamoussoukro", "addressCountry": "CI" },
+    "knowsAbout": ["Communication", "Marketing digital", "Identité de marque"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#projets">Aller aux projets</a>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Accueil">
+      <span class="seal" aria-hidden="true">ER</span>
+      <span>E.R. Pregnon</span>
+    </a>
+    <nav>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span id="edition">Édition 2026</span> · Yamoussoukro</p>
+        <h1>Emmanuel-Roland Pregnon</h1>
+        <p class="lede">Communication &amp; marketing digital. Fondateur d'EbookHub.</p>
+        <p class="legal" id="legal-name">Pregnon Dimi Emmanuel-Roland</p>
+        <div class="hero-actions">
+          <a class="btn gold" href="#projets">Voir les projets</a>
+          <a class="btn ghost" href="#contact">Écrire</a>
+        </div>
+      </div>
+      <aside class="cover" aria-label="Couverture">
+        <div class="cover-inner">
+          <p class="cover-kicker">EbookHub</p>
+          <p class="cover-name">Emmanuel-Roland<br>Pregnon</p>
+          <p class="cover-rule"></p>
+          <p class="cover-role">Communication<br>&amp; Marketing Digital</p>
+          <p class="cover-foot"><span>Édition 2026</span><span>Yamoussoukro</span></p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="about" id="a-propos">
+      <p class="section-label">Note</p>
+      <div id="about"></div>
+    </section>
+
+    <section id="projets">
+      <div class="section-head">
+        <p class="section-label">Portfolio</p>
+        <h2>Projets</h2>
+      </div>
+      <div class="filters" id="filters" role="tablist" aria-label="Filtrer les projets"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="parcours">
+      <div class="section-head">
+        <p class="section-label">CV</p>
+        <h2>Parcours</h2>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+      <ul class="skills" id="skills"></ul>
+      <p class="hint">Les dates, formations et missions se complètent dans <code>projects.json</code>.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="section-label">Correspondance</p>
+      <h2>Un projet, une marque, une édition.</h2>
+      <p class="lede" id="availability">Ouvert aux collaborations.</p>
+      <div class="contact-row" id="contact-row"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>E.R. · EbookHub</span>
+    <span>Yamoussoukro</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
