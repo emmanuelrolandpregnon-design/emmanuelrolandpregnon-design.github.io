@@ -1,5 +1,4 @@
 :root {
-  --ink: #2a140c;
   --paper: #fff6ec;
   --gold: #e4b423;
   --serif: "Fraunces", Georgia, serif;
@@ -73,9 +72,11 @@ body {
   border-radius: 999px;
   background: rgba(62, 24, 6, 0.45);
 }
-.pills a {
+.pills a, .foot a {
   color: inherit;
   text-decoration: none;
+}
+.pills a {
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -98,29 +99,47 @@ body {
   gap: 18px;
   padding: 28px 8px 12px;
 }
+.kicker {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
 h1 {
   margin: 0;
   font-family: var(--serif);
   font-weight: 560;
-  font-size: clamp(40px, 7vw, 68px);
+  font-size: clamp(40px, 7vw, 64px);
   line-height: 0.92;
   letter-spacing: -0.03em;
 }
-.copy p {
-  max-width: 28ch;
+.copy p { max-width: 32ch; }
+.copy > p:not(.kicker) {
   margin: 14px 0 0;
   font-size: 15px;
   line-height: 1.45;
-  color: rgba(255, 246, 236, 0.86);
+  color: rgba(255, 246, 236, 0.88);
 }
-.portrait {
-  margin: 0;
-  display: grid;
-  place-items: center;
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
 }
+.facts li {
+  border: 1px solid rgba(255, 220, 170, 0.4);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+.portrait { margin: 0; display: grid; place-items: center; }
 .portrait img, .plate {
   width: min(280px, 70vw);
-  height: min(320px, 46vh);
+  height: min(320px, 42vh);
   object-fit: cover;
   border-radius: 24px;
   background: rgba(255, 236, 210, 0.16);
@@ -135,30 +154,41 @@ h1 {
   border: 1px solid rgba(255, 220, 170, 0.35);
 }
 .side { text-align: right; }
-.place, .brand {
+.label {
+  margin: 14px 0 2px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 246, 236, 0.62);
+}
+.label:first-child { margin-top: 0; }
+.place, .brand, .role {
   margin: 0;
   font-family: var(--serif);
-  font-size: 28px;
-  line-height: 1.1;
+  font-size: 26px;
+  line-height: 1.05;
 }
-.brand { margin-top: 10px; color: var(--gold); font-size: 18px; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--sans); }
+.brand { color: var(--gold); }
 
 .foot {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
   font-size: 12px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(255, 246, 236, 0.78);
 }
+.foot a { letter-spacing: 0.04em; text-transform: none; }
 
 @media (min-width: 860px) {
-  .body { grid-template-columns: 1fr 0.9fr 0.7fr; padding: 18px 18px 8px; }
-  .portrait img, .plate { width: 300px; height: 360px; }
+  .body { grid-template-columns: 1.1fr 0.85fr 0.75fr; padding: 18px 18px 8px; }
+  .portrait img, .plate { width: 280px; height: 340px; }
 }
 @media (max-width: 859px) {
   .bar { grid-template-columns: 1fr auto; }
   .pills { display: none; }
   .side { text-align: left; }
-  .body { padding-top: 36px; }
+  .body { padding-top: 32px; }
 }
