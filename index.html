@@ -3,66 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Emmanuel-Roland Pregnon — EbookHub</title>
-  <meta name="description" content="Emmanuel-Roland Pregnon, fondateur d'EbookHub. Communication et marketing digital. Yamoussoukro.">
-  <meta name="theme-color" content="#111111">
+  <title>Emmanuel-Roland Pregnon</title>
+  <meta name="description" content="Emmanuel-Roland Pregnon, fondateur d'EbookHub. Yamoussoukro.">
+  <meta name="theme-color" content="#d9d9d9">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@420;560&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="#top">ER<span>pregnon</span></a>
-    <nav>
-      <a href="#metier">Métier</a>
-      <a href="#projets">Projets</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="chip" href="https://github.com/emmanuelrolandpregnon-design">GitHub →</a>
-  </header>
-  <main id="top">
-    <section class="hero">
-      <div>
-        <h1>Communication,<br><em>qui tient</em><br>une marque.</h1>
-        <p>Stratégie, identité et présence pour EbookHub. Yamoussoukro.</p>
-        <a class="chip" href="#contact">Écrire →</a>
-      </div>
-      <figure class="collage">
+  <div class="app">
+    <aside class="rail" aria-label="Navigation">
+      <span class="mark">ER</span>
+      <a href="#top" aria-label="Accueil">⌂</a>
+      <a href="#projets" aria-label="Projets">▣</a>
+      <a href="#contact" aria-label="Contact">✉</a>
+    </aside>
+    <aside class="side">
+      <div class="who">
         <img id="portrait" alt="Emmanuel-Roland Pregnon">
-        <span class="sticker">Édition<br>2026</span>
-      </figure>
-    </section>
-    <section class="band" id="metier">
-      <h2>Ce que<br><em>je fais</em></h2>
-      <article><h3>Stratégie</h3><p>Message, priorité, et ce qu’une marque doit dire en premier.</p></article>
-      <article><h3>Identité</h3><p>Palette, monogramme, cartes de partage. Lisible, sans photo stock.</p></article>
-      <article><h3>Présence</h3><p>Page, bio, favicon. Une image qui reste la tienne.</p></article>
-      <article><h3>Édition</h3><p>EbookHub. Un titre, une couverture, un geste de marque.</p></article>
-    </section>
-    <section id="projets">
-      <div class="head"><h2>Projets,<br><em>pas des promesses.</em></h2></div>
-      <div class="cards">
-        <article><span>Édition</span><h3>EbookHub</h3><p>Fondateur. Communication et marketing digital, tenus ensemble.</p></article>
-        <article><span>Marque</span><h3>Système E.R.</h3><p>Navy, papier, or. Monogramme lisible à 16 px.</p></article>
-        <article><span>Web</span><h3>Ce miroir</h3><p>Nom, image, l’essentiel. Le reste s’ajoute quand il est vrai.</p></article>
+        <div>
+          <strong>Emmanuel-Roland Pregnon</strong>
+          <span>Fondateur, EbookHub</span>
+        </div>
       </div>
-    </section>
-    <section class="split" id="contact">
-      <div>
-        <p class="kicker">— À propos</p>
-        <h2>Pregnon Dimi Emmanuel-Roland.</h2>
-        <p>Fondateur d’EbookHub. Communication et marketing digital, à Yamoussoukro, Côte d’Ivoire.</p>
-      </div>
-      <aside>
-        <h2>Ouvert.</h2>
-        <p>Pas de mail encore. Le lien GitHub est le point de contact.</p>
-        <a class="chip dark" href="https://github.com/emmanuelrolandpregnon-design">GitHub →</a>
-      </aside>
-    </section>
-  </main>
-  <footer><strong>E.R. Pregnon</strong><span>EbookHub · Yamoussoukro · 2026</span></footer>
+      <p class="label">Projets</p>
+      <a class="row on" href="#ebookhub">EbookHub</a>
+      <a class="row" href="#marque">Système E.R.</a>
+      <a class="row" href="#miroir">Ce miroir</a>
+      <p class="label">Lieu</p>
+      <p class="row quiet">Yamoussoukro</p>
+      <p class="row quiet">Côte d’Ivoire</p>
+      <p class="label">Archive</p>
+      <p class="row quiet">Édition 2026</p>
+    </aside>
+    <main id="top">
+      <h1>Tableau</h1>
+      <p class="sub">Communication &amp; marketing digital.</p>
+      <section class="card" id="ebookhub">
+        <p class="label">En cours</p>
+        <h2>EbookHub</h2>
+        <p>Édition, message et présence tenus comme un seul geste.</p>
+      </section>
+      <section class="grid" id="projets">
+        <article class="card" id="marque"><h2>Identité</h2><p>Navy, papier, or. Monogramme E.R.</p></article>
+        <article class="card" id="miroir"><h2>Présence</h2><p>Nom, image, l’essentiel.</p></article>
+      </section>
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Pregnon Dimi Emmanuel-Roland. Pas de mail encore.</p>
+        <a href="https://github.com/emmanuelrolandpregnon-design">GitHub →</a>
+      </section>
+    </main>
+  </div>
   <script src="portrait.js"></script>
 </body>
 </html>
