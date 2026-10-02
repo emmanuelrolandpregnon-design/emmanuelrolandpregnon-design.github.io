@@ -3,124 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pregnon Dimi Emmanuel-Roland — Portfolio</title>
-  <meta name="description" content="Portfolio de Pregnon Dimi Emmanuel-Roland — communication et marketing digital, fondateur d’EbookHub. Yamoussoukro, édition 2026.">
-  <meta name="theme-color" content="#0c1424">
+  <title>Emmanuel-Roland Pregnon — EbookHub</title>
+  <meta name="description" content="Emmanuel-Roland Pregnon, fondateur d'EbookHub. Communication et marketing digital. Yamoussoukro.">
+  <meta name="theme-color" content="#111111">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#about">À propos</a>
-  <header>
-    <div class="goldbar"></div>
-    <div class="bar">
-      <a class="logo" href="#top">E.R.</a>
-      <nav class="desk" id="nav" aria-label="Chapitres"></nav>
-      <div class="grow">
-        <p class="place" id="place"></p>
-        <div class="langs" role="group" aria-label="Langue">
-          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
-          <button type="button" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-      </div>
-    </div>
-    <div class="menu-panel" id="menu"></div>
+  <header class="nav">
+    <a class="logo" href="#top">ER<span>pregnon</span></a>
+    <nav>
+      <a href="#metier">Métier</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="chip" href="https://github.com/emmanuelrolandpregnon-design">GitHub →</a>
   </header>
   <main id="top">
-    <section class="wrap hero">
+    <section class="hero">
       <div>
-        <p class="kicker" id="kicker"></p>
-        <p class="edition" id="edition"></p>
-        <h1 id="title"></h1>
-        <p class="deck" id="deck"></p>
-        <div class="actions">
-          <a class="btn solid" href="#work" id="cta-work"></a>
-          <a class="btn" href="#contact" id="cta-contact"></a>
-        </div>
+        <h1>Communication,<br><em>qui tient</em><br>une marque.</h1>
+        <p>Stratégie, identité et présence pour EbookHub. Yamoussoukro.</p>
+        <a class="chip" href="#contact">Écrire →</a>
       </div>
-      <div class="figure">
-        <p class="mark" aria-hidden="true">E.R.</p>
-        <img id="hero" src="media/hero.webp" alt="Pregnon Dimi Emmanuel-Roland">
+      <figure class="collage">
+        <img id="portrait" alt="Emmanuel-Roland Pregnon">
+        <span class="sticker">Édition<br>2026</span>
+      </figure>
+    </section>
+    <section class="band" id="metier">
+      <h2>Ce que<br><em>je fais</em></h2>
+      <article><h3>Stratégie</h3><p>Message, priorité, et ce qu’une marque doit dire en premier.</p></article>
+      <article><h3>Identité</h3><p>Palette, monogramme, cartes de partage. Lisible, sans photo stock.</p></article>
+      <article><h3>Présence</h3><p>Page, bio, favicon. Une image qui reste la tienne.</p></article>
+      <article><h3>Édition</h3><p>EbookHub. Un titre, une couverture, un geste de marque.</p></article>
+    </section>
+    <section id="projets">
+      <div class="head"><h2>Projets,<br><em>pas des promesses.</em></h2></div>
+      <div class="cards">
+        <article><span>Édition</span><h3>EbookHub</h3><p>Fondateur. Communication et marketing digital, tenus ensemble.</p></article>
+        <article><span>Marque</span><h3>Système E.R.</h3><p>Navy, papier, or. Monogramme lisible à 16 px.</p></article>
+        <article><span>Web</span><h3>Ce miroir</h3><p>Nom, image, l’essentiel. Le reste s’ajoute quand il est vrai.</p></article>
       </div>
     </section>
-    <section class="facts" aria-label="Repères"><ul id="facts"></ul></section>
-    <section class="about" id="about">
-      <div class="wrap">
-        <p class="kicker" id="about-kicker"></p>
-        <h2 id="about-title"></h2>
-        <div class="prose" id="about-body"></div>
-        <ul class="cards" id="about-cards"></ul>
+    <section class="split" id="contact">
+      <div>
+        <p class="kicker">— À propos</p>
+        <h2>Pregnon Dimi Emmanuel-Roland.</h2>
+        <p>Fondateur d’EbookHub. Communication et marketing digital, à Yamoussoukro, Côte d’Ivoire.</p>
       </div>
-    </section>
-    <section class="wrap block" id="skills">
-      <p class="kicker" id="skills-kicker"></p>
-      <h2 id="skills-title"></h2>
-      <ol class="skills" id="skills-list"></ol>
-    </section>
-    <section class="work" id="work">
-      <div class="wrap">
-        <p class="kicker" id="work-kicker"></p>
-        <h2 id="work-title"></h2>
-        <p class="lead" id="work-lead"></p>
-        <div id="pieces"></div>
-        <article class="offer">
-          <img src="media/cover.jpg" alt="">
-          <div>
-            <p class="kicker" id="offer-eye"></p>
-            <h3 id="offer-name"></h3>
-            <p class="price"><span class="was" id="offer-was"></span><span class="now" id="offer-now"></span></p>
-            <p id="offer-note"></p>
-            <a class="btn gold" id="offer-cta" href="https://bfgwdjfx.mychariow.shop/" target="_blank" rel="noreferrer"></a>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="wrap block" id="cert">
-      <div class="cert-grid">
-        <div>
-          <p class="kicker" id="cert-kicker"></p>
-          <h2 id="cert-title"></h2>
-          <p class="lead" id="cert-body"></p>
-        </div>
-        <div class="plate">
-          <div class="rule"></div>
-          <p class="kicker" style="margin-top:24px">Mind Luster</p>
-          <h3>Digital Marketing</h3>
-          <p class="kicker">ID</p>
-          <p class="id">92f0f568</p>
-          <button class="ghost" type="button" id="copy-id" style="margin-top:20px"></button>
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="wrap contact-grid">
-        <div>
-          <p class="kicker" id="contact-kicker"></p>
-          <h2 id="contact-title"></h2>
-          <p class="lead" id="contact-lead"></p>
-          <ul class="links" id="links"></ul>
-        </div>
-        <div class="hood">
-          <img src="media/hood.webp" alt="">
-        </div>
-      </div>
+      <aside>
+        <h2>Ouvert.</h2>
+        <p>Pas de mail encore. Le lien GitHub est le point de contact.</p>
+        <a class="chip dark" href="https://github.com/emmanuelrolandpregnon-design">GitHub →</a>
+      </aside>
     </section>
   </main>
-  <footer><div class="wrap"><p>E.R. · Yamoussoukro, CI</p><p id="colophon"></p></div></footer>
-  <dialog id="lightbox">
-    <div class="sheet">
-      <header>
-        <h3 id="lb-title"></h3>
-        <button class="ghost" type="button" id="lb-close"></button>
-      </header>
-      <img id="lb-img" alt="">
-      <p id="lb-body"></p>
-    </div>
-  </dialog>
-  <script src="site.js"></script>
+  <footer><strong>E.R. Pregnon</strong><span>EbookHub · Yamoussoukro · 2026</span></footer>
+  <script src="portrait.js"></script>
 </body>
 </html>
