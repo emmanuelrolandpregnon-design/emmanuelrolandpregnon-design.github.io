@@ -1,3 +1,6 @@
-const parts = ["PARTS"];
-const img = document.getElementById("portrait");
-if (img) img.src = "data:image/jpeg;base64," + parts.join("");
+const names = ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14"];
+Promise.all(names.map((n) => fetch("portrait/" + n + ".txt").then((r) => r.text())))
+  .then((parts) => {
+    const img = document.getElementById("portrait");
+    if (img) img.src = "data:image/jpeg;base64," + parts.join("");
+  });

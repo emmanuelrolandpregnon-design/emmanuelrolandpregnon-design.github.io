@@ -1,10 +1,6 @@
 :root {
   --ink: #24211c;
-  --cream: #e7e0d4;
   --paper: #f3eee4;
-  --mist: #d7dbe0;
-  --gold: #c4a15a;
-  --night: #141311;
 }
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
@@ -16,10 +12,8 @@ body {
 .desk {
   min-height: 100%;
   display: flex;
-  gap: 0;
   padding: 18px 10px 28px;
   overflow-x: auto;
-  align-items: stretch;
 }
 .strip {
   position: relative;
@@ -35,96 +29,43 @@ body {
 .mist { background-color: #cfd5dc; }
 .gold { background-color: #8a6a3b; color: #f4ead7; }
 .ink { background-color: #161513; color: #f3eee4; }
-.photo {
-  background:
-    linear-gradient(180deg, rgba(20,18,14,0.15), rgba(20,18,14,0.45)),
-    #2c382c;
-  color: #f3eee4;
-  overflow: hidden;
-}
+.photo { background: #2c382c; color: #f3eee4; overflow: hidden; }
 .photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center 22%; z-index: 0;
 }
+.tab, .line, .photo .meta { z-index: 2; }
+.photo .tab { background: rgba(243, 238, 228, 0.9); color: #24211c; }
 .edge { background-color: #ddd4c6; }
 .tab {
-  position: absolute;
-  top: 18px;
-  left: 10px;
-  background: inherit;
-  filter: brightness(1.06);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-bottom: 0;
-  padding: 8px 8px 16px;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  position: absolute; top: 18px; left: 10px; background: inherit;
+  border: 1px solid rgba(0,0,0,0.08); border-bottom: 0;
+  padding: 8px 8px 16px; font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg);
 }
 .tab.tall { top: 8px; }
 .tab.pale { color: #f3eee4; border-color: rgba(255,255,255,0.12); }
 .vert {
-  margin: 0;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-weight: 700;
-  font-size: 34px;
-  letter-spacing: -0.04em;
-  line-height: 0.9;
+  margin: 0; writing-mode: vertical-rl; transform: rotate(180deg);
+  font-weight: 700; font-size: 34px; letter-spacing: -0.04em; line-height: 0.9;
 }
 .vert.title { font-size: 42px; height: 78%; }
-.vert.small { font-size: 18px; font-weight: 500; letter-spacing: 0.04em; height: auto; }
+.vert.small { font-size: 18px; font-weight: 500; letter-spacing: 0.04em; }
 .file, .tiny, .meta, .stamp {
-  position: absolute;
-  left: 14px;
-  right: 12px;
-  margin: 0;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  position: absolute; left: 14px; right: 12px; margin: 0;
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
 }
-.file { bottom: 16px; }
-.tiny { bottom: 18px; letter-spacing: 0.04em; text-transform: none; }
+.file, .stamp, .tiny { bottom: 16px; }
+.tiny { letter-spacing: 0.04em; text-transform: none; }
 .code { margin: 70px 0 0; font-size: 13px; letter-spacing: 0.16em; }
-.note { margin: 18px 0 0; font-size: 18px; line-height: 1.15; letter-spacing: 0.02em; }
+.note { margin: 18px 0 0; font-size: 18px; line-height: 1.15; }
 .block { margin: 28px 0 0; font-size: 15px; line-height: 1.35; }
-.stamp { bottom: 18px; }
-.serif {
-  margin: 80px 0 0;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 22px;
-  font-style: italic;
-}
-.mark {
-  margin: 36px 0 12px;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 64px;
-  letter-spacing: -0.04em;
-  line-height: 0.8;
-}
+.serif { margin: 80px 0 0; font-family: "Libre Baskerville", Georgia, serif; font-size: 22px; font-style: italic; }
+.mark { margin: 36px 0 12px; font-family: "Libre Baskerville", Georgia, serif; font-size: 64px; line-height: 0.8; }
 .meta.gold, .meta.light { color: #e4b423; }
-.line {
-  position: absolute;
-  top: 70px;
-  bottom: 70px;
-  right: 16px;
-  width: 1px;
-  background: #e4b423;
-  z-index: 1;
-}
+.line { position: absolute; top: 70px; bottom: 70px; right: 16px; width: 1px; background: #e4b423; z-index: 1; }
 a { color: inherit; }
-.edge a {
-  position: absolute;
-  bottom: 18px;
-  left: 14px;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+.edge a { position: absolute; bottom: 18px; left: 14px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
 @media (max-width: 700px) {
   .strip { flex-basis: 92px; min-height: 88vh; }
   .vert.title { font-size: 32px; }
