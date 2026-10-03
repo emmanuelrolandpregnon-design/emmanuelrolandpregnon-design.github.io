@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +54,9 @@ h2{font-size:30px;margin:0 0 14px}
 .stack{position:relative}
 .stack .card:nth-child(2){margin-top:-28px;margin-left:16px}
 .lang{position:absolute;top:18px;right:18px;z-index:2;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:8px 12px;font-weight:750}
-[data-lang="en"] .fr,[data-lang="fr"] .en{display:none}
+.en{display:none}
+[data-lang="en"] .fr{display:none}
+[data-lang="en"] .en{display:inline}
 @media (prefers-reduced-motion:no-preference){
 .rise{animation:rise .9s ease both}
 .d1{animation-delay:.15s}.d2{animation-delay:.4s}.d3{animation-delay:.7s}.d4{animation-delay:.95s}
