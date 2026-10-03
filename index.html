@@ -57,6 +57,11 @@ h2{font-size:30px;margin:0 0 14px}
 .en{display:none}
 [data-lang="en"] .fr{display:none}
 [data-lang="en"] .en{display:inline}
+.news{display:flex;flex-direction:column;gap:12px}
+.news article{margin-top:0}
+.news h3{margin:10px 0 6px;font-size:20px}
+.news p{margin:0 0 12px}
+.price{font-weight:750}
 @media (prefers-reduced-motion:no-preference){
 .rise{animation:rise .9s ease both}
 .d1{animation-delay:.15s}.d2{animation-delay:.4s}.d3{animation-delay:.7s}.d4{animation-delay:.95s}
@@ -124,13 +129,28 @@ h2{font-size:30px;margin:0 0 14px}
 </div>
 </section>
 <section id="hub">
-<h2>Hub</h2>
+<h2><span class="fr">Actus</span><span class="en">News</span></h2>
+<div class="news">
 <article class="card">
-<img src="media/cover.webp" alt="Guide pratique : 7 stratégies simples pour gagner de l'argent en ligne" style="width:160px;border-radius:12px">
-<h3>EbookHub</h3>
-<p><span class="fr">Guide pratique : 7 stratégies simples pour gagner de l’argent en ligne.</span><span class="en">Practical guide: 7 simple strategies to earn money online.</span></p>
+<span class="tag">3 oct. 2026</span>
+<h3>20 messages WhatsApp pour décrocher un client</h3>
+<p><span class="fr">Nouveau. 20 textes à copier pour vendre un service ou un ebook, sans publicité. <span class="price">1 500 F</span>.</span><span class="en">New. 20 scripts to copy for selling a service or an ebook, without ads. <span class="price">1,500 F CFA</span>.</span></p>
 <a class="btn btn-copper" href="https://bfgwdjfx.mychariow.shop" style="display:inline-block">EbookHub</a>
 </article>
+<article class="card">
+<span class="tag">3 oct. 2026</span>
+<h3>Ton premier ebook sur Chariow, depuis ton téléphone</h3>
+<p><span class="fr">Nouveau. De l’idée au lien de paiement, sans ordinateur. <span class="price">2 000 F</span>.</span><span class="en">New. From the idea to the payment link, without a computer. <span class="price">2,000 F CFA</span>.</span></p>
+<a class="btn btn-copper" href="https://bfgwdjfx.mychariow.shop" style="display:inline-block">EbookHub</a>
+</article>
+<article class="card">
+<img src="media/cover.webp" alt="Guide pratique : 7 stratégies simples pour gagner de l'argent en ligne" style="width:160px;border-radius:12px">
+<span class="tag"><span class="fr">Déjà en ligne</span><span class="en">Already live</span></span>
+<h3><span class="fr">7 stratégies simples pour gagner de l’argent en ligne</span><span class="en">7 simple strategies to earn money online</span></h3>
+<p><span class="fr">Le premier guide de la boutique.</span><span class="en">The shop’s first guide.</span></p>
+<a class="btn btn-copper" href="https://bfgwdjfx.mychariow.shop" style="display:inline-block">EbookHub</a>
+</article>
+</div>
 </section>
 <section id="formation">
 <h2><span class="fr">Formation</span><span class="en">Education</span></h2>
@@ -153,9 +173,9 @@ h2{font-size:30px;margin:0 0 14px}
 <nav class="nav">
 <a href="#accueil"><span class="fr">Accueil</span><span class="en">Home</span></a>
 <a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
-<a href="#hub">Hub</a>
+<a href="#hub"><span class="fr">Actus</span><span class="en">News</span></a>
 <a href="#contact">Contact</a>
-<a class="go" href="#contact">></a>
+<a class="go" href="#hub">></a>
 </nav>
 <script>
 const words=["Communication","Marketing digital","Relations internationales"];
