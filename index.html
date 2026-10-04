@@ -1,241 +1,735 @@
 <!DOCTYPE html>
-<html lang="fr" data-lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emmanuel-Roland Pregnon | Communication et marketing digital</title>
-<meta name="description" content="Étudiant en anglais à Bouaké, basé à Yamoussoukro. Communication bilingue, marketing digital, EbookHub et Level Up Engl.">
-<link rel="canonical" href="https://emmanuelrolandpregnon-design.github.io/">
-<meta name="robots" content="index,follow">
-<meta name="theme-color" content="#96603a">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://emmanuelrolandpregnon-design.github.io/">
-<meta property="og:title" content="Emmanuel-Roland Pregnon | Communication et marketing digital">
-<meta property="og:description" content="Étudiant en anglais, fondateur d’EbookHub. Level Up Engl, anglais pour l’entretien.">
-<meta property="og:image" content="https://emmanuelrolandpregnon-design.github.io/media/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Emmanuel-Roland Pregnon | Communication et marketing digital">
-<meta name="twitter:description" content="Étudiant en anglais, fondateur d’EbookHub. Level Up Engl, anglais pour l’entretien.">
-<meta name="twitter:image" content="https://emmanuelrolandpregnon-design.github.io/media/og.jpg">
-<link rel="preload" as="image" href="media/hero.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06141B">
+  <title>ER TRAJECTORY — Emmanuel-Roland Pregnon | L3 Anglais &amp; Entrepreneur digital</title>
+  <meta name="description" content="Emmanuel-Roland Pregnon — étudiant en L3 Anglais à l’Université Alassane Ouattara, entrepreneur digital à Yamoussoukro. EbookHub, marketing digital, recherche de stage.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://emmanuelrolandpregnon-design.github.io/trajectory/">
+  <meta property="og:title" content="ER TRAJECTORY — Emmanuel-Roland Pregnon">
+  <meta property="og:description" content="Étudiant en anglais · Entrepreneur digital · Yamoussoukro">
+  <meta property="og:image" content="https://emmanuelrolandpregnon-design.github.io/trajectory/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ER TRAJECTORY — Emmanuel-Roland Pregnon">
+  <meta name="twitter:description" content="Étudiant en anglais · Entrepreneur digital · Yamoussoukro">
+  <meta name="twitter:image" content="https://emmanuelrolandpregnon-design.github.io/trajectory/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%2306141B%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2242%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20fill%3D%22%23CCD0CF%22%3EER%3C%2Ftext%3E%3C%2Fsvg%3E" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="https://emmanuelrolandpregnon-design.github.io/trajectory/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1c140e;--cream:#fff8f0;--paper:#ebe3d8;--copper:#96603a;--glass:rgba(255,248,240,.9)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.45}
-img{max-width:100%;display:block}
-a{color:inherit}
-.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;padding:28px 20px 108px;color:var(--cream);overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url(media/hero.webp) center 20%/cover no-repeat;filter:blur(10px);transform:scale(1.08)}
-.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(120,96,74,.35),rgba(90,70,54,.45))}
-.hero-inner{position:relative;z-index:1;width:100%}
-.mark{width:52px;height:52px;border-radius:16px;background:#fff;color:var(--ink);display:grid;place-items:center;font-weight:700}
-.kicker{display:inline-block;margin:18px 0;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.22);font-size:15px;font-weight:650}
-h1{font-size:40px;line-height:1.05;margin:8px 0}
-.sub{font-size:18px;font-weight:650;margin:8px 0 0}
-.word{font-size:32px;font-weight:750;min-height:42px;margin:14px 0}
-.chips{display:flex;gap:8px;overflow:auto;padding-bottom:8px}
-.chip{background:#fff;color:var(--ink);border-radius:999px;padding:10px 14px;font-size:15px;font-weight:700;white-space:nowrap}
-.actions{display:flex;gap:10px;margin-top:16px}
-.btn{flex:1;text-align:center;text-decoration:none;border-radius:999px;padding:16px 12px;font-weight:750;font-size:16px}
-.btn-copper{background:var(--copper);color:#fff}
-.btn-white{background:#fff;color:var(--ink)}
-.quiet{display:inline-block;margin-top:12px;color:inherit;font-weight:650;font-size:15px}
-.nav{position:fixed;left:16px;right:16px;bottom:14px;z-index:5;display:flex;align-items:center;justify-content:space-between;background:rgba(62,48,38,.94);color:#fff;border-radius:999px;padding:10px 12px}
-.nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;text-align:center;min-width:58px}
-.nav .go{width:46px;height:46px;border-radius:50%;background:var(--copper);display:grid;place-items:center;color:#fff;text-decoration:none;font-size:20px}
-main{padding:28px 20px 120px}
-section{margin-bottom:36px}
-h2{font-size:30px;margin:0 0 14px}
-.about{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start}
-.about img{width:120px;height:150px;object-fit:cover;object-position:center top;border-radius:18px;background:#fff}
-.card{background:var(--glass);border:1px solid rgba(255,255,255,.7);border-radius:28px;padding:22px;box-shadow:0 12px 30px rgba(90,60,40,.12);margin-top:14px}
-.tag{display:inline-block;background:var(--copper);color:#fff;border-radius:999px;padding:6px 12px;font-size:14px;font-weight:700}
-.stack{position:relative}
-.stack .card:nth-child(2){margin-top:-28px;margin-left:16px}
-.stack .card:nth-child(3){margin-top:-28px;margin-left:32px}
-.lang{position:absolute;top:18px;right:18px;z-index:2;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:8px 12px;font-weight:750}
-.en{display:none}
-[data-lang="en"] .fr{display:none}
-[data-lang="en"] .en{display:inline}
-.news{display:flex;flex-direction:column;gap:12px}
-.news article{margin-top:0}
-.news h3{margin:10px 0 6px;font-size:20px}
-.news p{margin:0 0 12px}
-.news img{width:100%;max-width:220px;border-radius:16px;margin-bottom:12px}
-.price{font-weight:750}
-.link{font-weight:750;text-underline-offset:3px}
-@media (prefers-reduced-motion:no-preference){
-.rise{animation:rise .9s ease both}
-.d1{animation-delay:.15s}.d2{animation-delay:.4s}.d3{animation-delay:.7s}.d4{animation-delay:.95s}
-.kicker{animation:float 3.2s ease-in-out infinite}
-.word{animation:swap 9s infinite}
-.word:after{content:"";display:block;height:3px;width:0;background:var(--copper);animation:line .9s .8s ease both}
-@keyframes rise{from{opacity:0;transform:translateY(28px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
-@keyframes float{50%{transform:translateY(-6px)}}
-@keyframes line{to{width:180px}}
-@keyframes swap{0%,28%{content:normal} }
-}
-</style>
+    :root {
+      --bg: #06141B;
+      --bg-2: #11212D;
+      --line: #253745;
+      --muted: #4A5C6A;
+      --text-dim: #9BA8AB;
+      --text: #CCD0CF;
+      --glass: rgba(17, 33, 45, 0.72);
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+      --veil: rgba(6, 20, 27, 0.5);
+      --spot-a: rgba(74, 92, 106, 0.4);
+      --spot-b: rgba(37, 55, 69, 0.55);
+      --hero: clamp(2.15rem, 9.6vw, 6.2rem);
+    }
+    html[data-theme="light"] {
+      --bg: #E7EEF0;
+      --bg-2: #F7FBFC;
+      --line: #C5D0D4;
+      --muted: #5E727A;
+      --text-dim: #3E555D;
+      --text: #11212D;
+      --glass: rgba(247, 251, 252, 0.82);
+      --shadow: 0 10px 30px rgba(17, 33, 45, 0.1);
+      --veil: rgba(198, 214, 218, 0.45);
+      --spot-a: rgba(255, 255, 255, 0.95);
+      --spot-b: rgba(188, 214, 216, 0.55);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Outfit, sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    .progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0;
+      background: var(--text);
+      z-index: 40;
+    }
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(900px 520px at var(--x, 80%) var(--y, -10%), var(--spot-a), transparent 60%),
+        radial-gradient(700px 480px at 8% 88%, var(--spot-b), transparent 55%),
+        var(--bg);
+      animation: shift 18s ease-in-out infinite alternate;
+    }
+    @keyframes shift {
+      from { --x: 72%; --y: -8%; }
+      to { --x: 96%; --y: 18%; }
+    }
+    @property --x { syntax: "<percentage>"; inherits: false; initial-value: 80%; }
+    @property --y { syntax: "<percentage>"; inherits: false; initial-value: -10%; }
+    .bg span {
+      position: absolute;
+      width: 3px; height: 3px;
+      border-radius: 50%;
+      background: var(--text-dim);
+      opacity: 0.4;
+      animation: drift 14s linear infinite;
+    }
+    .bg span:nth-child(1) { top: 18%; left: 12%; animation-duration: 16s; }
+    .bg span:nth-child(2) { top: 32%; left: 78%; animation-duration: 18s; animation-delay: -4s; }
+    .bg span:nth-child(3) { top: 70%; left: 22%; animation-duration: 20s; animation-delay: -7s; }
+    .bg span:nth-child(4) { top: 58%; left: 88%; animation-duration: 15s; animation-delay: -2s; }
+    .bg span:nth-child(5) { top: 84%; left: 60%; animation-duration: 22s; animation-delay: -9s; }
+    @keyframes drift {
+      0% { transform: translate3d(0, 0, 0); opacity: 0.15; }
+      50% { transform: translate3d(12px, -20px, 0); opacity: 0.5; }
+      100% { transform: translate3d(0, 0, 0); opacity: 0.15; }
+    }
+    nav {
+      position: fixed;
+      top: calc(12px + env(safe-area-inset-top, 0px));
+      left: 12px; right: 12px;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 12px;
+      border: 1px solid rgba(155, 168, 171, 0.22);
+      border-radius: 18px;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease;
+    }
+    nav:active { transform: scale(0.985); }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+      text-decoration: none;
+      min-width: 0;
+    }
+    .mono {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      flex: none;
+      color: var(--text);
+    }
+    .mono { background: #06141B; overflow: hidden; }
+    .mono img {
+      width: 34px; height: 34px;
+      object-fit: cover;
+      display: block;
+      animation: logo 4.8s ease-in-out infinite;
+      transform-origin: center;
+    }
+    @keyframes logo {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-1.5px) rotate(-6deg); }
+    }
+    .brand b {
+      font-family: Syne, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .tools { display: flex; align-items: center; gap: 6px; }
+    button.chip, a.chip {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      border-radius: 999px;
+      min-height: 34px;
+      padding: 0 10px;
+      font: 500 12px/1 Outfit, sans-serif;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: transform 0.18s ease;
+    }
+    button.chip { cursor: pointer; }
+    button.chip:active, a.chip:active { transform: scale(0.92); }
+    .menu-btn { width: 34px; padding: 0; justify-content: center; }
+    .drawer {
+      position: fixed;
+      inset: 0;
+      z-index: 25;
+      background: var(--veil);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+    .drawer.open { opacity: 1; pointer-events: auto; }
+    .panel {
+      position: absolute;
+      top: calc(74px + env(safe-area-inset-top, 0px));
+      left: 12px; right: 12px;
+      padding: 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(155, 168, 171, 0.22);
+      background: var(--glass);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      transform: translateY(-8px);
+      opacity: 0;
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    .drawer.open .panel { transform: none; opacity: 1; }
+    .panel a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      color: var(--text);
+      text-decoration: none;
+      padding: 12px 4px;
+      border-bottom: 1px solid var(--line);
+      font-family: Syne, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .panel a span { color: var(--muted); font-family: Outfit, sans-serif; font-size: 12px; font-weight: 500; }
+    .panel a:last-child { border-bottom: 0; }
+    .panel a:active { transform: scale(0.98); }
+    main { position: relative; z-index: 1; }
+    .hero {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: calc(108px + env(safe-area-inset-top, 0px)) 22px calc(28px + env(safe-area-inset-bottom, 0px));
+    }
+    .index {
+      color: var(--text-dim);
+      letter-spacing: 0.18em;
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-family: Syne, sans-serif;
+      font-weight: 800;
+      font-size: var(--hero);
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+    h1 .line { display: block; }
+    h1.play .ch {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(0.4em);
+      animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+    }
+    .rule {
+      width: 72px; height: 1px;
+      background: var(--muted);
+      margin: 22px 0 16px;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: grow 0.8s ease 0.9s forwards;
+    }
+    .lead {
+      max-width: 30ch;
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--text);
+    }
+    .lead span.w {
+      display: inline-block;
+    }
+    .lead.play span.w {
+      opacity: 0;
+      transform: translateY(8px);
+      animation: rise 0.55s ease forwards;
+    }
+    .meta {
+      margin-top: 22px;
+      color: var(--text-dim);
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      opacity: 0;
+      animation: rise 0.6s ease 1.15s forwards;
+    }
+    .scroll {
+      margin-top: 36px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: rise 0.6s ease 1.3s forwards;
+    }
+    .scroll i {
+      width: 2px; height: 48px;
+      background: var(--line);
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border-radius: 2px;
+    }
+    .scroll i::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; top: -45%;
+      height: 45%;
+      background: var(--text);
+      animation: tick 1.4s ease-in-out infinite;
+    }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    @keyframes grow { to { transform: scaleX(1); } }
+    @keyframes tick { to { top: 120%; } }
+    .block {
+      padding: 28px 22px 8px;
+    }
+    .block h2 {
+      font-family: Syne, sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.8rem, 8vw, 2.6rem);
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin: 8px 0 18px;
+    }
+    .kicker { color: var(--text-dim); letter-spacing: 0.16em; font-size: 12px; font-weight: 500; }
+    .cards { display: grid; gap: 12px; }
+    .card {
+      border: 1px solid rgba(155, 168, 171, 0.22);
+      background: var(--glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+      transform: translateY(16px);
+      opacity: 0;
+      transition: transform 0.2s ease, opacity 0.6s ease;
+    }
+    .card.in { transform: none; opacity: 1; }
+    .card:active { transform: scale(0.98); }
+    .card b {
+      display: block;
+      font-family: Syne, sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .card p { color: var(--text-dim); font-size: 0.95rem; font-weight: 400; }
+    .card a {
+      display: inline-flex;
+      margin-top: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--muted);
+      min-height: 32px;
+      align-items: center;
+    }
+    .tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .time { position: relative; margin: 8px 0 12px; padding-left: 22px; }
+    .time::before {
+      content: "";
+      position: absolute;
+      left: 5px; top: 6px; bottom: 6px;
+      width: 2px;
+      background: var(--line);
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 1s ease;
+    }
+    .time.in::before { transform: scaleY(1); }
+    .step { position: relative; padding: 0 0 16px; }
+    .step i {
+      position: absolute;
+      left: -22px; top: 6px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      border: 2px solid var(--text);
+      background: var(--bg);
+    }
+    .step b { display: block; font-family: Syne, sans-serif; font-size: 1.05rem; font-weight: 700; }
+    .step p { color: var(--text-dim); font-size: 0.95rem; }
+    .goal { display: flex; gap: 10px; align-items: baseline; }
+    .goal em {
+      font-style: normal;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      flex: none;
+    }
+
+    .nums b { font-size: clamp(2rem, 10vw, 3rem); letter-spacing: -0.04em; }
+    form.card { display: grid; gap: 10px; }
+    form.card label { display: grid; gap: 6px; color: var(--text-dim); font-size: 13px; }
+    form.card input, form.card textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      border-radius: 12px;
+      padding: 12px;
+      font: 400 16px/1.4 Outfit, sans-serif;
+    }
+    .send { justify-self: start; padding: 0 16px; }
+    #contact .card a { margin-right: 14px; }
+
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+    .chip.on { background: var(--text); color: var(--bg); }
+    .pane { display: none; }
+    .pane.on { display: grid; gap: 12px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .tile {
+      border: 1px solid rgba(155, 168, 171, 0.22);
+      border-radius: 16px;
+      min-height: 72px;
+      padding: 12px;
+      display: flex;
+      align-items: flex-end;
+      font-family: Syne, sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 1.15;
+      background: var(--glass);
+      transition: transform 0.18s ease;
+    }
+    .tile:active { transform: scale(0.97); }
+    .end {
+      padding: 18px 22px calc(48px + env(safe-area-inset-bottom, 0px));
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      h1 .ch, .lead span, .rule, .meta, .scroll, .card, .mono img, .time::before { opacity: 1; transform: none; }
+    }
+  </style>
 </head>
 <body>
-<button class="lang" type="button" id="lang">EN</button>
-<header class="hero" id="accueil">
-<div class="hero-bg"></div>
-<div class="hero-inner">
-<div class="mark">ER</div>
-<p class="kicker rise">Édition 2026 · Yamoussoukro</p>
-<h1 class="rise d1">Emmanuel-Roland<br>Pregnon</h1>
-<p class="sub rise d2"><span class="fr">Étudiant en anglais, fondateur d’EbookHub</span><span class="en">English student, founder of EbookHub</span></p>
-<p class="word rise d3" id="word">Communication</p>
-<div class="chips rise d4">
-<span class="chip">Communication</span><span class="chip">Anglais</span><span class="chip">EbookHub</span><span class="chip">Level Up Engl</span>
-</div>
-<div class="actions">
-<a class="btn btn-copper" href="https://wa.me/2250575370929"><span class="fr">Stage / contact</span><span class="en">Internship / contact</span></a>
-</div>
-<a class="quiet" href="cv.pdf"><span class="fr">Voir mon CV</span><span class="en">See my CV</span></a>
-</div>
-</header>
-<main>
-<section id="apropos">
-<h2><span class="fr">À propos</span><span class="en">About</span></h2>
-<div class="about">
-<img src="media/portrait.webp" alt="Emmanuel-Roland Pregnon">
-<p><span class="fr">Pregnon Dimi Emmanuel-Roland. Licence 3 d’Études anglaises à l’Université Alassane Ouattara de Bouaké, basé à Yamoussoukro. Bilingue français-anglais, certifié en marketing digital. Je cherche un stage en communication bilingue et contenu digital, en Côte d’Ivoire ou à l’international, si possible en ONG ou en relations internationales.</span><span class="en">L3 English student at Alassane Ouattara University, Bouaké, based in Yamoussoukro. Bilingual in French and English, certified in digital marketing. Seeking an internship in bilingual communication and digital content, in Côte d’Ivoire or abroad, ideally with an NGO or in international relations.</span></p>
-</div>
-</section>
-<section id="competences">
-<h2><span class="fr">Compétences</span><span class="en">Skills</span></h2>
-<div class="chips">
-<span class="chip"><span class="fr">Rédaction bilingue</span><span class="en">Bilingual writing</span></span>
-<span class="chip"><span class="fr">Prise de parole</span><span class="en">Public speaking</span></span>
-<span class="chip"><span class="fr">Contenu digital</span><span class="en">Digital content</span></span>
-<span class="chip">SEO on-page</span>
-<span class="chip">Canva</span>
-<span class="chip"><span class="fr">Anglais professionnel</span><span class="en">Professional English</span></span>
-</div>
-</section>
-<section id="projets">
-<h2><span class="fr">Projets</span><span class="en">Projects</span></h2>
-<div class="stack">
-<article class="card">
-<span class="tag"><span class="fr">Depuis 2026</span><span class="en">Since 2026</span></span>
-<h3>Level Up Engl</h3>
-<p><span class="fr">Série entretien : 35 phrases, 15 réponses, le mail du soir, et le pack des 3. Distincte d’EbookHub.</span><span class="en">English shop on Chariow. Interview phrases, PDF books, exercises. Separate from EbookHub.</span></p>
-<a class="link" href="https://qxziykmr.mychariow.shop">Level Up Engl</a>
-</article>
-<article class="card">
-<span class="tag"><span class="fr">Depuis 2026</span><span class="en">Since 2026</span></span>
-<h3>EbookHub</h3>
-<p><span class="fr">Boutique d’ebooks sur Chariow. Sélection, couvertures, contenus, mise en ligne, visibilité ajustée.</span><span class="en">Ebook shop on Chariow. Selection, covers, content, publishing, and adjusted visibility.</span></p>
-<a class="link" href="https://bfgwdjfx.mychariow.shop">EbookHub</a>
-</article>
-<article class="card">
-<span class="tag"><span class="fr">Déc. 2023</span><span class="en">Dec. 2023</span></span>
-<h3><span class="fr">Terrain</span><span class="en">Field work</span></h3>
-<p><span class="fr">Campagne nationale de vaccination, ministère de la Santé. Messages simples, accueil, orientation.</span><span class="en">National vaccination campaign, Ministry of Health. Simple messages, welcome, and guidance.</span></p>
-</article>
-</div>
-</section>
-<section id="hub">
-<h2><span class="fr">Actus</span><span class="en">News</span></h2>
-<div class="news">
-<article class="card">
-<span class="tag">Gratuit</span>
-<h3>Série débutant — 3 packs</h3>
-<p><span class="fr">Les trois packs en un seul PDF : se présenter, en classe, au quotidien. Lycée et licence. Gratuit.</span><span class="en">The three packs in one PDF: introducing yourself, in class, everyday English. High school and university. Free.</span></p>
-<a class="link" href="https://qxziykmr.mychariow.shop">Level Up Engl</a>
-</article>
-<article class="card">
-<span class="tag">Gratuit</span>
-<h3>Anglais débutant — 20 exercices corrigés</h3>
-<p><span class="fr">Lycée et début de licence. 20 phrases du quotidien et 5 exercices corrigés. Gratuit, pour commencer.</span><span class="en">High school and early university. 20 everyday phrases and 5 corrected exercises. Free, to start.</span></p>
-<a class="link" href="https://qxziykmr.mychariow.shop">Level Up Engl</a>
-</article>
-<article class="card">
-<span class="tag">1 · 800 F</span>
-<h3>35 phrases d’anglais pour un entretien</h3>
-<p><span class="fr">Du bonjour au merci. Anglais, français, exemple déjà rempli. Sept blocs, à lire à voix haute.</span><span class="en">From hello to thank you. English, French, and a filled-in example. Seven blocks, to read aloud.</span></p>
-<a class="link" href="https://qxziykmr.mychariow.shop">Level Up Engl</a>
-</article>
-<article class="card">
-<span class="tag">2 · 800 F</span>
-<h3>15 réponses d’anglais pour un entretien</h3>
-<p><span class="fr">Quinze questions, une réponse courte. Parlez-moi de vous, le point faible, le salaire, la date de début.</span><span class="en">Fifteen questions, one short answer. Tell me about yourself, a weakness, salary, and a start date.</span></p>
-<a class="link" href="https://qxziykmr.mychariow.shop">Level Up Engl</a>
-</article>
-<article class="card">
-<span class="tag">3 · 800 F</span>
-<h3>Le mail de remerciement après l’entretien</h3>
-<p><span class="fr">Cinq mails à copier. Le jour même, la version courte, le stage, sans le nom, la relance à 7 jours.</span><span class="en">Five emails to copy. Same day, short version, internship, no name, follow-up after 7 days.</span></p>
-<a class="link" href="https://qxziykmr.mychariow.shop">Level Up Engl</a>
-</article>
-<article class="card">
-<img src="media/actus-messages.jpg" alt="Couverture : 20 messages WhatsApp pour décrocher un client">
-<span class="tag">1 500 F</span>
-<h3>20 messages WhatsApp pour décrocher un client</h3>
-<p><span class="fr">Vingt textes à copier pour le premier contact, la relance, le prix, le groupe et l’avis. Pour vendre un service ou un ebook sans publicité. Deux messages maximum par personne.</span><span class="en">Twenty scripts to copy for the first contact, the follow-up, the price, the group post and the review. For selling a service or an ebook without ads. Two messages per person at most.</span></p>
-<a class="link" href="https://bfgwdjfx.mychariow.shop">EbookHub</a>
-</article>
-<article class="card">
-<img src="media/actus-chariow.jpg" alt="Couverture : Ton premier ebook sur Chariow, depuis ton téléphone">
-<span class="tag">2 000 F</span>
-<h3>Ton premier ebook sur Chariow, depuis ton téléphone</h3>
-<p><span class="fr">De l’idée au lien de paiement, sans ordinateur. Sujet, titre, PDF court, fiche Chariow et vingt messages WhatsApp. Objectif : la première vente, pas un revenu garanti.</span><span class="en">From the idea to the payment link, without a computer. Topic, title, short PDF, Chariow page and twenty WhatsApp messages. Goal: the first sale, not a guaranteed income.</span></p>
-<a class="link" href="https://bfgwdjfx.mychariow.shop">EbookHub</a>
-</article>
-<article class="card">
-<img src="media/cover.webp" alt="Couverture : 7 stratégies simples pour gagner de l’argent en ligne">
-<span class="tag"><span class="fr">Guide</span><span class="en">Guide</span></span>
-<h3>7 stratégies simples pour gagner de l’argent en ligne</h3>
-<p><span class="fr">Le premier guide de la boutique. Sept pistes pour un revenu complémentaire, un plan de sept jours et une liste d’outils gratuits. À lire sur téléphone.</span><span class="en">The shop’s first guide. Seven paths to a side income, a seven-day plan and a list of free tools. Made to read on a phone.</span></p>
-<a class="link" href="https://bfgwdjfx.mychariow.shop">EbookHub</a>
-</article>
-</div></div>
-</section>
-<section id="formation">
-<h2><span class="fr">Formation</span><span class="en">Education</span></h2>
-<article class="card"><span class="tag"><span class="fr">En cours</span><span class="en">Ongoing</span></span><h3><span class="fr">Études anglaises</span><span class="en">English studies</span></h3><p><span class="fr">Licence 3, UAO Bouaké. Traduction, rédaction, communication interculturelle.</span><span class="en">L3, UAO Bouaké. Translation, writing, intercultural communication.</span></p></article>
-<article class="card"><span class="tag">2026</span><h3>Mind Luster</h3><p>Digital Marketing From Scratch. ID 92f0f568.</p></article>
-</section>
-<section id="contact">
-<h2>Contact</h2>
-<article class="card" style="background:#3e3026;color:#fff8f0">
-<p>emmanuelrolandpregnon@gmail.com</p>
-<p>+225 05 75 37 09 29</p>
-<p>Yamoussoukro / Bouaké</p>
-<div class="actions">
-<a class="btn btn-copper" href="https://wa.me/2250575370929">WhatsApp</a>
-</div>
-<a class="quiet" href="https://www.linkedin.com/in/emmanuel-roland-pregnon-a25211440">LinkedIn</a>
-</article>
-</section>
-<p style="margin:28px 0 0"><a class="quiet" href="donnees.html"><span class="fr">Données</span><span class="en">Data</span></a></p>
-</main>
-<nav class="nav">
-<a href="#accueil"><span class="fr">Accueil</span><span class="en">Home</span></a>
-<a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
-<a href="#hub"><span class="fr">Actus</span><span class="en">News</span></a>
-<a href="#contact">Contact</a>
-<a class="go" href="https://wa.me/2250575370929" aria-label="WhatsApp">></a>
-</nav>
-<script>
-const words=["Communication","Marketing digital","Level Up Engl"];
-let i=0;
-const el=document.getElementById("word");
-if(!matchMedia("(prefers-reduced-motion: reduce)").matches){
-setInterval(()=>{i=(i+1)%words.length;el.style.opacity=0;el.style.transform="translateY(18px)";setTimeout(()=>{el.textContent=words[i];el.style.opacity=1;el.style.transform="none"},280)},2400);
-}
-document.getElementById("lang").onclick=()=>{
-const en=document.documentElement.dataset.lang==="en";
-document.documentElement.dataset.lang=en?"fr":"en";
-document.documentElement.lang=en?"fr":"en";
-document.getElementById("lang").textContent=en?"EN":"FR";
-};
-</script>
+  <div class="progress" id="progress"></div>
+  <div class="bg" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <nav>
+    <a class="brand" href="#hero">
+      <span class="mono" aria-hidden="true">
+        <img src="data:image/png;base64,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" alt="">
+      </span>
+      <b>TRAJECTORY</b>
+    </a>
+    <div class="tools">
+      <button class="chip" id="lang" type="button" aria-label="Langue">EN</button>
+      <button class="chip" id="theme" type="button" aria-label="Thème">☀</button>
+      <button class="chip menu-btn" id="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="panel">☰</button>
+    </div>
+  </nav>
+  <div class="drawer" id="drawer">
+    <div class="panel" id="panel" role="menu"></div>
+  </div>
+  <main>
+    <section class="hero" id="hero">
+      <p class="index">.00 — <span data-fr="Départ" data-en="Departure">Départ</span></p>
+      <h1 id="title" aria-label="ER TRAJECTORY"><span class="line">ER</span><span class="line">TRAJECTORY</span></h1>
+      <div class="rule"></div>
+      <p class="lead" id="lead" data-fr="Étudiant en anglais, entrepreneur digital. Ma trajectoire ne fait que commencer." data-en="English student and digital entrepreneur. My trajectory is only just beginning.">Étudiant en anglais, entrepreneur digital. Ma trajectoire ne fait que commencer.</p>
+      <p class="meta" data-fr="Emmanuel-Roland · Yamoussoukro · L3 Anglais" data-en="Emmanuel-Roland · Yamoussoukro · L3 English">Emmanuel-Roland · Yamoussoukro · L3 Anglais</p>
+      <div class="scroll"><i></i><span data-fr="Défiler" data-en="Scroll">Défiler</span></div>
+    </section>
+    <section class="block" id="now">
+      <p class="kicker">.01 — <span data-fr="Maintenant" data-en="Now">Maintenant</span></p>
+      <h2 data-fr="Ce qui occupe mes jours." data-en="What fills my days.">Ce qui occupe mes jours.</h2>
+      <div class="cards">
+        <article class="card"><b data-fr="L3 Anglais" data-en="Year 3, English">L3 Anglais</b><p data-fr="Université Alassane Ouattara, Bouaké. Études en cours." data-en="Alassane Ouattara University, Bouaké. Degree in progress.">Université Alassane Ouattara, Bouaké. Études en cours.</p></article>
+        <article class="card"><b>EbookHub</b><p data-fr="Je gère EbookHub sur Chariow. Une bibliothèque d’ebooks en croissance." data-en="I run EbookHub on Chariow. A growing ebook library.">Je gère EbookHub sur Chariow. Une bibliothèque d’ebooks en croissance.</p></article>
+        <article class="card"><b data-fr="Marketing digital" data-en="Digital marketing">Marketing digital</b><p data-fr="Certification Mind Luster. Je m’en sers pour la boutique et la recherche de stage." data-en="Mind Luster certificate. I use it for the shop and the internship search.">Certification Mind Luster. Je m’en sers pour la boutique et la recherche de stage.</p><p data-fr="Digital Marketing From Scratch, 5 juillet 2026. ID : 92f0f568" data-en="Digital Marketing From Scratch, July 5, 2026. ID: 92f0f568">Digital Marketing From Scratch, 5 juillet 2026. ID : 92f0f568</p><a href="certificat-mindluster.jpg" target="_blank" rel="noopener" data-fr="Voir la certification →" data-en="View the certificate →">Voir la certification →</a></article>
+        <article class="card"><b data-fr="Level Up Engl" data-en="Level Up Engl">Level Up Engl</b><p data-fr="Cours, exercices et livres PDF pour apprendre l’anglais : série entretien et série débutant gratuite." data-en="Lessons, exercises and PDF books for learning English: an interview series and a free beginner series.">Cours, exercices et livres PDF pour apprendre l’anglais : série entretien et série débutant gratuite.</p></article>
+        <article class="card"><b data-fr="Stage" data-en="Internship">Stage</b><p data-fr="Recherche active en communication et marketing digital." data-en="Actively looking for a role in communication and digital marketing.">Recherche active en communication et marketing digital.</p></article>
+      </div>
+    </section>
+    <section class="block" id="work">
+      <p class="kicker">.02 — <span data-fr="Projets" data-en="Projects">Projets</span></p>
+      <h2 data-fr="Deux chantiers, une trajectoire." data-en="Two builds, one trajectory.">Deux chantiers, une trajectoire.</h2>
+      <div class="cards">
+        <article class="card">
+          <b>EbookHub</b>
+          <p data-fr="Une bibliothèque d’ebooks en croissance." data-en="A growing ebook library.">Une bibliothèque d’ebooks en croissance.</p>
+          <a href="https://bfgwdjfx.mychariow.shop" target="_blank" rel="noopener" data-fr="Visiter la boutique →" data-en="Visit the store →">Visiter la boutique →</a>
+        </article>
+        <article class="card">
+          <b>Level Up Engl</b>
+          <p data-fr="Cours, exercices et livres PDF pour apprendre l’anglais : série entretien et série débutant gratuite." data-en="Lessons, exercises and PDF books for learning English: an interview series and a free beginner series.">Cours, exercices et livres PDF pour apprendre l’anglais : série entretien et série débutant gratuite.</p>
+          <a href="https://qxziykmr.mychariow.shop" target="_blank" rel="noopener" data-fr="Visiter la boutique →" data-en="Visit the store →">Visiter la boutique →</a>
+        </article>
+      </div>
+    </section>
+    <section class="block" id="path">
+      <p class="kicker">.03 — <span data-fr="Parcours" data-en="Path">Parcours</span></p>
+      <h2 data-fr="Ce qui est déjà en mouvement." data-en="What is already in motion.">Ce qui est déjà en mouvement.</h2>
+      <div class="time" id="time">
+        <div class="step"><i></i><b data-fr="L3 Anglais" data-en="Year 3, English">L3 Anglais</b><p data-fr="Université Alassane Ouattara, Bouaké. En cours." data-en="Alassane Ouattara University, Bouaké. In progress.">Université Alassane Ouattara, Bouaké. En cours.</p></div>
+        <div class="step"><i></i><b data-fr="Certification Mind Luster" data-en="Mind Luster certificate"><a href="certificat-mindluster.jpg" target="_blank" rel="noopener" style="color:inherit">Certification Mind Luster</a></b><p data-fr="Marketing digital. ID : 92f0f568" data-en="Digital marketing. ID: 92f0f568">Marketing digital. ID : 92f0f568</p></div>
+        <div class="step"><i></i><b>EbookHub</b><p data-fr="Boutique d’ebooks en ligne." data-en="Ebook shop, live.">Boutique d’ebooks en ligne.</p></div>
+        <div class="step"><i></i><b>Level Up Engl</b><p data-fr="Boutique de cours d’anglais, en ligne." data-en="English-course shop, live.">Boutique de cours d’anglais, en ligne.</p></div>
+      </div>
+    </section>
+    <section class="block" id="vision">
+      <p class="kicker">.04 — <span data-fr="Vision" data-en="Vision">Vision</span></p>
+      <h2 data-fr="Où la trajectoire va." data-en="Where the trajectory goes.">Où la trajectoire va.</h2>
+      <div class="cards">
+        <article class="card"><div class="goal"><em data-fr="Court" data-en="Short">Court</em><b data-fr="Finir la L3 et décrocher un stage" data-en="Finish year 3 and land an internship">Finir la L3 et décrocher un stage</b></div><p data-fr="Communication et marketing digital." data-en="Communication and digital marketing.">Communication et marketing digital.</p></article>
+        <article class="card"><div class="goal"><em data-fr="Moyen" data-en="Mid">Moyen</em><b data-fr="Un master, deux pistes" data-en="A master’s, two paths">Un master, deux pistes</b></div><p data-fr="Explorer le marketing, l’éducation et la logistique." data-en="Explore marketing, education and logistics.">Explorer le marketing, l’éducation et la logistique.</p></article>
+        <article class="card"><div class="goal"><em data-fr="Long" data-en="Long">Long</em><b data-fr="Une carrière à dimension internationale" data-en="A career with an international reach">Une carrière à dimension internationale</b></div><p data-fr="Diplomatie, éducation, entrepreneuriat." data-en="Diplomacy, education, entrepreneurship.">Diplomatie, éducation, entrepreneuriat.</p></article>
+      </div>
+    </section>
+    <section class="block" id="numbers">
+      <p class="kicker">.05 — <span data-fr="Chiffres" data-en="Numbers">Chiffres</span></p>
+      <h2 data-fr="Seulement ce qui est sûr." data-en="Only what is certain.">Seulement ce qui est sûr.</h2>
+      <div class="cards nums">
+        <article class="card"><b class="count" data-to="2">0</b><p data-fr="Langues de travail, français et anglais." data-en="Working languages, French and English.">Langues de travail, français et anglais.</p></article>
+        <article class="card"><b>L3</b><p data-fr="Année d’études en cours, anglais." data-en="Current year of study, English.">Année d’études en cours, anglais.</p></article>
+        <article class="card"><b data-fr="En croissance" data-en="Growing">En croissance</b><p data-fr="Bibliothèque d’ebooks. Pas de total figé." data-en="Ebook library. No fixed total.">Bibliothèque d’ebooks. Pas de total figé.</p></article>
+      </div>
+    </section>
+    <section class="block" id="contact">
+      <p class="kicker">.06 — <span data-fr="Contact" data-en="Contact">Contact</span></p>
+      <h2 data-fr="Disponible pour un stage." data-en="Open for an internship.">Disponible pour un stage.</h2>
+      <div class="cards">
+        <article class="card">
+          <b data-fr="Écrire" data-en="Write">Écrire</b>
+          <p data-fr="Communication et marketing digital. Yamoussoukro." data-en="Communication and digital marketing. Yamoussoukro.">Communication et marketing digital. Yamoussoukro.</p>
+          <a href="mailto:emmanuelrolandpregnon@gmail.com">emmanuelrolandpregnon@gmail.com</a>
+          <a href="https://www.linkedin.com/in/emmanuel-roland-pregnon-a25211440" target="_blank" rel="noopener">LinkedIn</a>
+        </article>
+        <form class="card" action="mailto:emmanuelrolandpregnon@gmail.com" method="post" enctype="text/plain">
+          <b data-fr="Message" data-en="Message">Message</b>
+          <label data-fr="Nom" data-en="Name">Nom<input name="nom" required autocomplete="name"></label>
+          <label data-fr="E-mail" data-en="Email">E-mail<input name="email" type="email" required autocomplete="email"></label>
+          <label data-fr="Message" data-en="Message">Message<textarea name="message" required rows="4"></textarea></label>
+          <button class="chip send" type="submit" data-fr="Envoyer" data-en="Send">Envoyer</button>
+        </form>
+      </div>
+    </section>
+    <section class="block" id="passions">
+      <p class="kicker">.07 — <span data-fr="Passions" data-en="Passions">Passions</span></p>
+      <h2 data-fr="Comprendre les gens, la stratégie, les récits." data-en="Understanding people, strategy, and the stories that stay.">Comprendre les gens, la stratégie, les récits.</h2>
+      <div class="tabs" role="tablist">
+        <button class="chip on" type="button" data-tab="psy" data-fr="Psychologie" data-en="Psychology">Psychologie</button>
+        <button class="chip" type="button" data-tab="philo" data-fr="Philosophie" data-en="Philosophy">Philosophie</button>
+        <button class="chip" type="button" data-tab="watch" data-fr="Récits" data-en="Stories">Récits</button>
+        <button class="chip" type="button" data-tab="other" data-fr="Autres" data-en="Other">Autres</button>
+      </div>
+      <div class="pane on" id="psy">
+        <article class="card">
+          <b>L’Art de la guerre</b>
+          <p data-fr="Sun Tzu. Ce que j’en retiens : lire le terrain et le rapport de forces avant d’agir. Utile pour la communication, pas comme mode d’emploi." data-en="Sun Tzu. What I keep: read the ground and the balance of forces before acting. Useful for communication, not as a manual.">Sun Tzu. Ce que j’en retiens : lire le terrain et le rapport de forces avant d’agir. Utile pour la communication, pas comme mode d’emploi.</p>
+        </article>
+        <article class="card">
+          <b data-fr="Sujets explorés" data-en="Topics explored">Sujets explorés</b>
+          <p data-fr="Manipulation de masse et MKUltra, comme sujets de lecture. Angle : comprendre les mécanismes d’influence et le comportement d’un public. Aucun titre d’ouvrage précis pour l’instant." data-en="Mass manipulation and MKUltra, as reading topics. Angle: understanding influence and how an audience behaves. No specific book title yet.">Manipulation de masse et MKUltra, comme sujets de lecture. Angle : comprendre les mécanismes d’influence et le comportement d’un public. Aucun titre d’ouvrage précis pour l’instant.</p>
+        </article>
+      </div>
+      <div class="pane" id="philo">
+        <article class="card">
+          <b data-fr="À compléter" data-en="To be filled">À compléter</b>
+          <p data-fr="Auteurs, citations et idées. Emplacement libre." data-en="Authors, quotations and ideas. Open slot.">Auteurs, citations et idées. Emplacement libre.</p>
+        </article>
+      </div>
+      <div class="pane" id="watch">
+        <div class="tabs">
+          <button class="chip on" type="button" data-filter="series" data-fr="Séries" data-en="Series">Séries</button>
+          <button class="chip" type="button" data-filter="animes" data-fr="Animes" data-en="Anime">Animes</button>
+        </div>
+        <div class="grid" id="watch-grid"></div>
+      </div>
+      <div class="pane" id="other">
+        <article class="card">
+          <b data-fr="Football" data-en="Football">Football</b>
+          <p data-fr="FC Mobile en mode manager. L’intérêt est l’optimisation tactique, pas le score." data-en="FC Mobile in manager mode. The interest is tactical optimisation, not the score.">FC Mobile en mode manager. L’intérêt est l’optimisation tactique, pas le score.</p>
+        </article>
+        <article class="card">
+          <b data-fr="Bloc libre" data-en="Open slot">Bloc libre</b>
+          <p data-fr="Autre passion à ajouter." data-en="Another interest to add.">Autre passion à ajouter.</p>
+        </article>
+      </div>
+    </section>
+    <p class="end">ER TRAJECTORY</p>
+  </main>
+  <script>
+    const store = {
+      get(key) { try { return localStorage.getItem(key); } catch (e) { return null; } },
+      set(key, value) { try { localStorage.setItem(key, value); } catch (e) {} }
+    };
+    const copy = {
+      fr: ["Étudiant en anglais,", "entrepreneur digital.", "Ma trajectoire ne fait que commencer."],
+      en: ["English student", "and digital entrepreneur.", "My trajectory is only just beginning."]
+    };
+    const links = [
+      [".00", "hero", "Départ", "Departure"],
+      [".01", "now", "Maintenant", "Now"],
+      [".02", "work", "Projets", "Projects"],
+      [".03", "path", "Parcours", "Path"],
+      [".04", "vision", "Vision", "Vision"],
+      [".05", "numbers", "Chiffres", "Numbers"],
+      [".06", "contact", "Contact", "Contact"],
+      [".07", "passions", "Passions", "Passions"]
+    ];
+    let lang = store.get("er-lang") || "fr";
+    const lead = document.getElementById("lead");
+    const title = document.getElementById("title");
+    const panel = document.getElementById("panel");
+    const drawer = document.getElementById("drawer");
+    const menuBtn = document.getElementById("menu");
+    const langBtn = document.getElementById("lang");
+    const themeBtn = document.getElementById("theme");
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    function letters(word, start) {
+      return word.split("").map((ch, i) => `<span class="ch" style="animation-delay:${start + i * 0.045}s">${ch}</span>`).join("");
+    }
+    function paint() {
+      document.documentElement.lang = lang;
+      langBtn.textContent = lang === "fr" ? "EN" : "FR";
+      title.classList.add("play");
+      title.innerHTML = '<span class="line">' + letters("ER", 0.05) + '</span><span class="line">' + letters("TRAJECTORY", 0.22) + '</span>';
+      lead.classList.add("play");
+      lead.innerHTML = copy[lang].map((w, i) => `<span class="w" style="animation-delay:${1 + i * 0.12}s">${w}</span>`).join(" ");
+      panel.innerHTML = links.map(([n, id, fr, en]) => `<a href="#${id}" role="menuitem">${lang === "fr" ? fr : en}<span>${n}</span></a>`).join("");
+      document.querySelectorAll("[data-fr]").forEach((el) => { el.textContent = el.dataset[lang]; });
+    }
+    function setTheme(next) {
+      document.documentElement.dataset.theme = next;
+      store.set("er-theme", next);
+      themeBtn.textContent = next === "light" ? "☾" : "☀";
+      themeMeta.content = next === "light" ? "#E7EEF0" : "#06141B";
+    }
+    paint();
+    setTheme(store.get("er-theme") === "light" ? "light" : "dark");
+    langBtn.addEventListener("click", () => { lang = lang === "fr" ? "en" : "fr"; store.set("er-lang", lang); paint(); });
+    themeBtn.addEventListener("click", () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
+    function closeMenu() { drawer.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+    menuBtn.addEventListener("click", () => {
+      const open = !drawer.classList.contains("open");
+      drawer.classList.toggle("open", open);
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    drawer.addEventListener("click", (e) => { if (e.target === drawer || e.target.closest("a")) closeMenu(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
+    const bar = document.getElementById("progress");
+    function onScroll() {
+      const h = document.documentElement.scrollHeight - innerHeight;
+      bar.style.width = (h > 0 ? (scrollY / h) * 100 : 0) + "%";
+    }
+    const reveals = document.querySelectorAll(".card, .time");
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add("in"); });
+      }, { threshold: 0.2 });
+      reveals.forEach((el) => io.observe(el));
+    } else {
+      reveals.forEach((el) => el.classList.add("in"));
+    }
+
+    const counts = document.querySelectorAll(".count");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function runCount(el) {
+      const to = Number(el.dataset.to || 0);
+      if (reduce) { el.textContent = String(to); return; }
+      const start = performance.now();
+      const dur = 900;
+      function tick(now) {
+        const p = Math.min(1, (now - start) / dur);
+        el.textContent = String(Math.round(to * p));
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+    if ("IntersectionObserver" in window) {
+      const co = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting || entry.target.dataset.done) return;
+          entry.target.dataset.done = "1";
+          runCount(entry.target);
+        });
+      }, { threshold: 0.6 });
+      counts.forEach((el) => co.observe(el));
+    } else counts.forEach(runCount);
+
+
+    const series = ["Breaking Bad","Better Call Saul","The Mentalist","Sherlock","Suits","Prison Break","Money Heist","Peaky Blinders","Narcos","Ozark","Mindhunter","Mr. Robot","Dark","Black Mirror","Lucifer"];
+    const animes = ["Death Note","Code Geass","Monster","Attack on Titan","Hunter x Hunter","Fullmetal Alchemist: Brotherhood"];
+    const grid = document.getElementById("watch-grid");
+    function paintWatch(kind) {
+      const list = kind === "animes" ? animes : series;
+      grid.innerHTML = list.map((name) => `<article class="tile">${name}</article>`).join("");
+    }
+    paintWatch("series");
+    document.querySelectorAll("[data-tab]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("[data-tab]").forEach((b) => b.classList.remove("on"));
+        btn.classList.add("on");
+        document.querySelectorAll(".pane").forEach((pane) => pane.classList.remove("on"));
+        document.getElementById(btn.dataset.tab).classList.add("on");
+      });
+    });
+    document.querySelectorAll("[data-filter]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("[data-filter]").forEach((b) => b.classList.remove("on"));
+        btn.classList.add("on");
+        paintWatch(btn.dataset.filter);
+      });
+    });
+
+    addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  </script>
 </body>
 </html>
