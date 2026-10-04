@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Données | Emmanuel-Roland Pregnon</title>
+<meta name="description" content="Ce que ce portfolio affiche et ce qu’il ne collecte pas.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://emmanuelrolandpregnon-design.github.io/donnees.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{--ink:#1c140e;--cream:#fff8f0;--paper:#ebe3d8;--copper:#96603a}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+main{width:min(640px,100%);margin:0 auto;padding:28px 20px 48px}
+.mark{width:52px;height:52px;border-radius:16px;background:#fff;display:grid;place-items:center;font-weight:700}
+h1{font-size:32px;line-height:1.05;margin:18px 0 8px}
+h2{font-size:20px;margin:22px 0 8px}
+p{margin:0 0 12px}
+a{color:var(--copper);font-weight:700}
+.card{background:rgba(255,248,240,.9);border-radius:28px;padding:22px;margin-top:16px}
+.lang{position:absolute;top:18px;right:18px;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:8px 12px;font-weight:750}
+.en{display:none}
+[data-lang="en"] .fr{display:none}
+[data-lang="en"] .en{display:inline}
+.back{display:inline-block;margin-top:18px;text-decoration:none;background:var(--copper);color:#fff;border-radius:999px;padding:14px 18px}
+</style>
+</head>
+<body>
+<button class="lang" type="button" id="lang">EN</button>
+<main>
+<div class="mark">ER</div>
+<h1><span class="fr">Données</span><span class="en">Data</span></h1>
+<p><span class="fr">Portfolio d’Emmanuel-Roland Pregnon, Yamoussoukro. Édition 2026.</span><span class="en">Portfolio of Emmanuel-Roland Pregnon, Yamoussoukro. 2026 edition.</span></p>
+<div class="card">
+<h2><span class="fr">Ce qui est affiché</span><span class="en">What is shown</span></h2>
+<p><span class="fr">Nom, photo, parcours, email emmanuelrolandpregnon@gmail.com et téléphone +225 05 75 37 09 29. Ces coordonnées sont publiques pour un contact de stage.</span><span class="en">Name, photo, background, email emmanuelrolandpregnon@gmail.com and phone +225 05 75 37 09 29. These details are public for internship contact.</span></p>
+<h2><span class="fr">Ce qui n’est pas collecté</span><span class="en">What is not collected</span></h2>
+<p><span class="fr">Pas de compte, pas de formulaire, pas de paiement, pas de cookie, pas d’outil d’analyse. Rien n’est revendu.</span><span class="en">No account, no form, no payment, no cookie, no analytics tool. Nothing is sold.</span></p>
+<h2><span class="fr">Liens externes</span><span class="en">External links</span></h2>
+<p><span class="fr">WhatsApp, LinkedIn et les boutiques Chariow ont leurs propres règles. Ce site ne reçoit pas leurs données.</span><span class="en">WhatsApp, LinkedIn and the Chariow shops have their own rules. This site does not receive their data.</span></p>
+<h2><span class="fr">Cadre</span><span class="en">Framework</span></h2>
+<p><span class="fr">Loi ivoirienne n° 2013-450 sur la protection des données à caractère personnel. Pour une question : emmanuelrolandpregnon@gmail.com.</span><span class="en">Ivorian law No. 2013-450 on the protection of personal data. For a question: emmanuelrolandpregnon@gmail.com.</span></p>
+</div>
+<a class="back" href="/"><span class="fr">Retour à l’accueil</span><span class="en">Back home</span></a>
+</main>
+<script>
+document.getElementById("lang").onclick=()=>{
+const en=document.documentElement.dataset.lang==="en";
+document.documentElement.dataset.lang=en?"fr":"en";
+document.documentElement.lang=en?"fr":"en";
+document.getElementById("lang").textContent=en?"EN":"FR";
+};
+</script>
+</body>
+</html>
