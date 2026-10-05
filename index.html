@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emmanuel-Roland Pregnon</title>
+<meta name="description" content="Étudiant en anglais, communication et marketing digital. Yamoussoukro.">
+<link rel="preload" as="image" href="media/hero.webp">
+<style>
+:root{--ink:#1c140e;--cream:#fff8f0;--paper:#ebe3d8;--copper:#96603a;--glass:rgba(255,248,240,.9)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.45}
+img{max-width:100%;display:block}
+a{color:inherit}
+.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;padding:28px 20px 108px;color:var(--cream);overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(media/hero.webp) center 20%/cover no-repeat;filter:blur(10px);transform:scale(1.08)}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(120,96,74,.35),rgba(90,70,54,.45))}
+.hero-inner{position:relative;z-index:1;width:100%}
+.mark{width:52px;height:52px;border-radius:16px;background:#fff;color:var(--ink);display:grid;place-items:center;font-weight:700}
+.kicker{display:inline-block;margin:18px 0;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.22);font-size:15px;font-weight:650}
+h1{font-size:40px;line-height:1.05;margin:8px 0}
+.sub{font-size:18px;font-weight:650;margin:8px 0 0}
+.word{font-size:32px;font-weight:750;min-height:42px;margin:14px 0}
+.chips{display:flex;gap:8px;overflow:auto;padding-bottom:8px}
+.chip{background:#fff;color:var(--ink);border-radius:999px;padding:10px 14px;font-size:15px;font-weight:700;white-space:nowrap}
+.actions{display:flex;gap:10px;margin-top:16px}
+.btn{flex:1;text-align:center;text-decoration:none;border-radius:999px;padding:16px 12px;font-weight:750;font-size:16px}
+.btn-copper{background:var(--copper);color:#fff}
+.btn-white{background:#fff;color:var(--ink)}
+.nav{position:fixed;left:16px;right:16px;bottom:14px;z-index:5;display:flex;align-items:center;justify-content:space-between;background:rgba(62,48,38,.94);color:#fff;border-radius:999px;padding:10px 12px}
+.nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;text-align:center;min-width:58px}
+.nav .go{width:46px;height:46px;border-radius:50%;background:var(--copper);display:grid;place-items:center;color:#fff;text-decoration:none;font-size:20px}
+main{padding:28px 20px 120px}
+section{margin-bottom:36px}
+h2{font-size:30px;margin:0 0 14px}
+.about{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start}
+.about img{width:120px;height:150px;object-fit:cover;object-position:center top;border-radius:18px;background:#fff}
+.card{background:var(--glass);border:1px solid rgba(255,255,255,.7);border-radius:28px;padding:22px;box-shadow:0 12px 30px rgba(90,60,40,.12);margin-top:14px}
+.tag{display:inline-block;background:var(--copper);color:#fff;border-radius:999px;padding:6px 12px;font-size:14px;font-weight:700}
+.stack{position:relative}
+.stack .card:nth-child(2){margin-top:-28px;margin-left:16px}
+.lang{position:absolute;top:18px;right:18px;z-index:2;background:#fff;color:var(--ink);border:0;border-radius:999px;padding:8px 12px;font-weight:750}
+[data-lang="en"] .fr,[data-lang="fr"] .en{display:none}
+@media (prefers-reduced-motion:no-preference){
+.rise{animation:rise .9s ease both}
+.d1{animation-delay:.15s}.d2{animation-delay:.4s}.d3{animation-delay:.7s}.d4{animation-delay:.95s}
+.kicker{animation:float 3.2s ease-in-out infinite}
+.word{animation:swap 9s infinite}
+.word:after{content:"";display:block;height:3px;width:0;background:var(--copper);animation:line .9s .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(28px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes float{50%{transform:translateY(-6px)}}
+@keyframes line{to{width:180px}}
+@keyframes swap{0%,28%{content:normal} }
+}
+</style>
+</head>
+<body>
+<button class="lang" type="button" id="lang">EN</button>
+<header class="hero" id="accueil">
+<div class="hero-bg"></div>
+<div class="hero-inner">
+<div class="mark">ER</div>
+<p class="kicker rise">Édition 2026 · Yamoussoukro</p>
+<h1 class="rise d1">Emmanuel-Roland<br>Pregnon</h1>
+<p class="sub rise d2"><span class="fr">Étudiant en anglais, fondateur d’EbookHub</span><span class="en">English student, founder of EbookHub</span></p>
+<p class="word rise d3" id="word">Communication</p>
+<div class="chips rise d4">
+<span class="chip">Communication</span><span class="chip">Anglais</span><span class="chip">EbookHub</span>
+</div>
+<div class="actions">
+<a class="btn btn-copper" href="cv.pdf">Voir mon CV</a>
+<a class="btn btn-white" href="#contact"><span class="fr">Me contacter</span><span class="en">Contact me</span></a>
+</div>
+</div>
+</header>
+<main>
+<section id="apropos">
+<h2><span class="fr">À propos</span><span class="en">About</span></h2>
+<div class="about">
+<img src="media/portrait.webp" alt="Emmanuel-Roland Pregnon">
+<p><span class="fr">Pregnon Dimi Emmanuel-Roland. Licence 3 d’Études anglaises à l’Université Alassane Ouattara de Bouaké, basé à Yamoussoukro. Bilingue français-anglais, certifié en marketing digital. Je cherche un stage en communication bilingue et contenu digital, en Côte d’Ivoire ou à l’international, si possible en ONG ou en relations internationales.</span><span class="en">L3 English student at Alassane Ouattara University, Bouaké, based in Yamoussoukro. Bilingual in French and English, certified in digital marketing. Seeking an internship in bilingual communication and digital content, in Côte d’Ivoire or abroad, ideally with an NGO or in international relations.</span></p>
+</div>
+</section>
+<section id="competences">
+<h2><span class="fr">Compétences</span><span class="en">Skills</span></h2>
+<div class="chips">
+<span class="chip"><span class="fr">Rédaction bilingue</span><span class="en">Bilingual writing</span></span>
+<span class="chip"><span class="fr">Prise de parole</span><span class="en">Public speaking</span></span>
+<span class="chip"><span class="fr">Contenu digital</span><span class="en">Digital content</span></span>
+<span class="chip">SEO on-page</span>
+<span class="chip">Canva</span>
+<span class="chip"><span class="fr">Anglais professionnel</span><span class="en">Professional English</span></span>
+</div>
+</section>
+<section id="projets">
+<h2><span class="fr">Projets</span><span class="en">Projects</span></h2>
+<div class="stack">
+<article class="card">
+<span class="tag"><span class="fr">Depuis 2026</span><span class="en">Since 2026</span></span>
+<h3>EbookHub</h3>
+<p><span class="fr">Boutique d’ebooks sur Chariow. Sélection, couvertures, contenus, mise en ligne, visibilité ajustée.</span><span class="en">Ebook shop on Chariow. Selection, covers, content, publishing, and adjusted visibility.</span></p>
+</article>
+<article class="card">
+<span class="tag"><span class="fr">Déc. 2023</span><span class="en">Dec. 2023</span></span>
+<h3><span class="fr">Terrain</span><span class="en">Field work</span></h3>
+<p><span class="fr">Campagne nationale de vaccination, ministère de la Santé. Messages simples, accueil, orientation.</span><span class="en">National vaccination campaign, Ministry of Health. Simple messages, welcome, and guidance.</span></p>
+</article>
+</div>
+</section>
+<section id="hub">
+<h2>Hub</h2>
+<article class="card">
+<img src="media/cover.webp" alt="Guide pratique : 7 stratégies simples pour gagner de l'argent en ligne" style="width:160px;border-radius:12px">
+<h3>EbookHub</h3>
+<p><span class="fr">Guide pratique : 7 stratégies simples pour gagner de l’argent en ligne.</span><span class="en">Practical guide: 7 simple strategies to earn money online.</span></p>
+<a class="btn btn-copper" href="https://bfgwdjfx.mychariow.shop" style="display:inline-block">EbookHub</a>
+</article>
+</section>
+<section id="formation">
+<h2><span class="fr">Formation</span><span class="en">Education</span></h2>
+<article class="card"><span class="tag"><span class="fr">En cours</span><span class="en">Ongoing</span></span><h3><span class="fr">Études anglaises</span><span class="en">English studies</span></h3><p><span class="fr">Licence 3, UAO Bouaké. Traduction, rédaction, communication interculturelle.</span><span class="en">L3, UAO Bouaké. Translation, writing, intercultural communication.</span></p></article>
+<article class="card"><span class="tag">2026</span><h3>Mind Luster</h3><p>Digital Marketing From Scratch. ID 92f0f568.</p></article>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<article class="card" style="background:#3e3026;color:#fff8f0">
+<p>emmanuelrolandpregnon@gmail.com</p>
+<p>+225 05 75 37 09 29</p>
+<p>Yamoussoukro / Bouaké</p>
+<div class="actions">
+<a class="btn btn-white" href="https://www.linkedin.com/in/emmanuel-roland-pregnon-a25211440">LinkedIn</a>
+<a class="btn btn-copper" href="https://wa.me/2250575370929">WhatsApp</a>
+</div>
+</article>
+</section>
+</main>
+<nav class="nav">
+<a href="#accueil"><span class="fr">Accueil</span><span class="en">Home</span></a>
+<a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
+<a href="#hub">Hub</a>
+<a href="#contact">Contact</a>
+<a class="go" href="#contact">></a>
+</nav>
+<script>
+const words=["Communication","Marketing digital","Relations internationales"];
+let i=0;
+const el=document.getElementById("word");
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches){
+setInterval(()=>{i=(i+1)%words.length;el.style.opacity=0;el.style.transform="translateY(18px)";setTimeout(()=>{el.textContent=words[i];el.style.opacity=1;el.style.transform="none"},280)},2400);
+}
+document.getElementById("lang").onclick=()=>{
+const en=document.documentElement.dataset.lang==="en";
+document.documentElement.dataset.lang=en?"fr":"en";
+document.documentElement.lang=en?"fr":"en";
+document.getElementById("lang").textContent=en?"EN":"FR";
+};
+</script>
+</body>
+</html>
