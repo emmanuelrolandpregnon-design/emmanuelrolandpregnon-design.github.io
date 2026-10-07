@@ -58,7 +58,7 @@ h2{font-size:30px;margin:0 0 14px}
 <div class="hero-bg"></div>
 <div class="hero-inner">
 <div class="mark">ER</div>
-<p class="kicker rise">Édition 2026 · Yamoussoukro</p>
+<p class="kicker rise">Édition 2026 · <span id="currentDate">07.10</span> · Yamoussoukro</p>
 <h1 class="rise d1">Emmanuel-Roland<br>Pregnon</h1>
 <p class="sub rise d2"><span class="fr">Étudiant en anglais, web designer et fondateur d’EbookHub</span><span class="en">English student, web designer and founder of EbookHub</span></p>
 <p class="word rise d3" id="word">Communication</p>
@@ -178,6 +178,15 @@ document.documentElement.dataset.lang=en?"fr":"en";
 document.documentElement.lang=en?"fr":"en";
 document.getElementById("lang").textContent=en?"EN":"FR";
 };
+
+// Mise à jour automatique de la date au format JJ.MM
+(function() {
+  const now = new Date();
+  const day = String(now.getDate()).padStart(2, '0');
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const dateEl = document.getElementById('currentDate');
+  if (dateEl) dateEl.textContent = day + '.' + month;
+})();
 </script>
 </body>
 </html>
